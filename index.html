@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+
+    <video class="bg-video" autoplay muted loop playsinline>
+      <source src="./mp4/sunny.mp4" type="video/mp4">
+    </video>
+
+    <div class="header-content">
+      <h1 class="title">Weather Forecast</h1>
+    </div>
+    
+
+
+    <form id="form" class="form">
+      <input id="inputCity" class="input" type="text" placeholder="Enter the city">
+      <button class="btn">Show</button>
+    </form>
+  </header>
+  
+  <div class="card">
+    <h2 class="card-city">City</h2>
+
+    <div class="card-value">
+      <span class="card-temp">--°C</span>
+      <img src="" alt="Weather" class="card-img">
+    </div>
+
+    <div class="card-description">---</div>
+  </div>
+
+  <footer class="footer">
+    <a href="https://github.com/DianaKurt" target="_blank">Project by Kurt</a>
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
+</html>

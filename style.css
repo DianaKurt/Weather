@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 50px;
+  transition: background 0.5s ease;
+  background: linear-gradient(135deg, #6db0ff, #1962c4);
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+
+/* Фоны под погоду */
+.weather-sunny {
+  background: linear-gradient(135deg, #ffcf33, #ff9333);
+}
+
+.weather-cloudy {
+  background: linear-gradient(135deg, #9bb0c2, #6d7a88);
+}
+
+.weather-rain {
+  background: linear-gradient(135deg, #50667f, #2d3e50);
+}
+
+.weather-snow {
+  background: linear-gradient(135deg, #e4f1ff, #a8c6ff);
+}
+
+.header {
+  position: relative;
+  overflow: hidden;
+  height: 250px; 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 15px 50px;
+  align-items: center;
+  text-align: center;
+
+}
+/* фоны для футер*/
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; 
+}
+
+.header-content {
+  position: relative;
+  z-index: 1; 
+}
+
+
+.title {
+  font-size: 42px;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.18;
+  text-align: center;
+  font-family:'Courier New', Courier, monospace;
+}
+
+.form {
+  display: flex;
+  width: 400px;
+  height: 55px;
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.input {
+  flex-grow: 1;
+  font-weight: 300;
+  line-height: 1;
+  padding:  15px;
+  font-size: 20px;
+}
+
+.btn {
+  width: 145px;
+  height: 54px;
+  background: rgb(194, 53, 53);
+  color: white;
+  border-radius: 6px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: rgb(239, 95, 95);
+}
+
+/* Weather card */
+.card {
+  padding: 25px;
+  width: 320px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.card-city {
+  font-weight: 500;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.card-value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.card-img {
+  width: 60px;
+  height: 60px;
+}
+
+.card-description {
+  font-size: 20px;
+  color: #333;
+}
+
+.footer {
+  margin-top: auto;
+  width: 100%;
+  height: 32px;
+  padding: 8px 15px;
+
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  color: white;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
