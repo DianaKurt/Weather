@@ -32,7 +32,7 @@
 ```
 index.html  
 style.css  
-script.js  
+index.js  
 /mp4  
 /img
 ```
@@ -140,7 +140,7 @@ script.js
 │
 ├── index.html        # Разметка, контейнеры под данные
 ├── style.css         # Стили и адаптивность
-├── script.js         # Логика приложения
+├── index.js         # Логика приложения
 │
 ├── /mp4           # Фоны по видам погоды
 │     ├── sunny.mp4
